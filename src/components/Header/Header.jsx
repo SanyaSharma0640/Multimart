@@ -28,7 +28,7 @@ const Header = () => {
     const totalQuantity = useSelector(state=> state.cart.totalQuantity)
     const menuRef = useRef(null)
     const navigate = useNavigate()
-    // const {currentUser} = useAuth()
+    const {currentUser} = useAuth()
     const stickHeaderrFunc =()=>{
         window.addEventListener('scroll', ()=>{
             if(document.body.scrollTop>80 || document.documentElement.scrollTop>80){
